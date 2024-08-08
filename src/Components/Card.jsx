@@ -1,12 +1,29 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 
 const Card = ({ char }) => { 
   // creo la funcion handleclick
   const handleClick = () => {
     // lo de abajo es una func de js para copiar texto al portapapeles
+    //npm install sweetalert2
     navigator.clipboard.writeText(char)
       .then(() => {
-        console.log(`${char} copiado al portapapeles`);
+        console.log(`${char} copied to clipboard!`); 
+        // ponemos la alerta de sweetalert2
+        Swal.fire({
+          toast: true, // Habilita el modo de notificación (toast)
+          position: 'top', // Posición de la notificación
+          showConfirmButton: false, // Oculta el botón de confirmación
+          timer: 1500, // Tiempo en milisegundos que la notificación se mostrará
+          title: 'Copied!',
+          text: ` ${char} copied to clipboard!`,
+          icon: 'success',
+          background: '#fff', // Fondo blanco para una buena visibilidad
+          color: '#000', // Texto negro
+        
+
+        });
+  
       })
       .catch(err => {
         console.error('Error al copiar al portapapeles', err);

@@ -22,7 +22,7 @@ const Navbar = () => {
     </Link>
 
     <Link to="/about">
-      <p className={`flex-grow text-center font-bold text-lg ${theme === 'light' ? 'text-blue-900' : 'text-yellow-500'}`}>About Us</p> 
+      <p className={`flex-grow text-center font-body font-bold text-lg ${theme === 'light' ? 'text-blue-900' : 'text-yellow-500'}`}>About Us</p> 
       </Link>
  
       {/* la classname de arriba es para que cuando se apreta el boton para cambiar el theme, tenga el blue si es light, y si es dark el yellow */}
