@@ -10,11 +10,12 @@ const Home = () => {
         
       </div>
 
-      <div className='flex gap-4 justify-center mt-20 flex-wrap w-7/12 mx-auto '>
+      <div className='flex gap-4 justify-center mt-20 flex-wrap w-7/12 mx-auto'>
          {arrayChars.map((char, index) => (
           <Card key = {index} char={char}></Card>
          ))}
        </div>
+       
     </div>
   );
 }
