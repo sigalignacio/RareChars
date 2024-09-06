@@ -1,3 +1,5 @@
+https://rare-chars.vercel.app/
+
 Personal project made with React and Tailwind CSS, focused on providing characters that some keyboards don't have, such as ñ, ç, and many others.
 
 https://rare-chars.vercel.app/
