@@ -4,7 +4,7 @@ import { ThemeProvider, useTheme } from './Contexts/ThemeContext';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import AboutUs from './Routes/AboutUs'
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const AppContent = () => {
   const { theme } = useTheme();
